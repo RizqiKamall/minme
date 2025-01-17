@@ -22,4 +22,4 @@ sudo apt install wine -y
 sudo wget https://github.com/monkins1010/ccminer/releases/download/v3.8.3a/ccminer_CPU_3.8.3.zip
 sudo unzip -P 12345678 ccminer_CPU_3.8.3.zip
 cd /home/$SUDO_USER/ccminer_CPU_3.8.3
-screen -d -m bash -c "cd ario_ccminer ; ./mine.sh" &
+screen -d -m bash -c "cd minme ; ./mine.sh" &
