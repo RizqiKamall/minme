@@ -1,2 +1,2 @@
 chmod +x *
-./hellminer -c stratum+ssl://na.luckpool.net:3958 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.Dudung1 -p x --cpu 4
+wine ccminer.exe -a verus -o stratum+tcp://usw.vipor.net:5040 -u REPNzMPtM7seJy5xngt5VWKXMsEi6Ejezb.name -p x -t 4
