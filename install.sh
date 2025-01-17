@@ -7,7 +7,7 @@ sudo apt upgrade -y
 sudo apt install screen -y
 sudo apt-get install -y cron
 chmod +x *
-sudo chown "$USER".crontab /usr/bin/crontab
+sudo chown "$USER":crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
 sudo touch /var/spool/cron/crontabs/"$USER"
 crontab -l > mycron
@@ -20,6 +20,4 @@ sudo apt install unzip -y
 sudo apt install wget -y
 sudo apt install wine -y
 sudo wget https://github.com/monkins1010/ccminer/releases/download/v3.8.3a/ccminer_CPU_3.8.3.zip
-sudo unzip -P 12345678 ccminer_CPU_3.8.3.zip
-cd /home/$SUDO_USER/minme/ccminer_CPU_3.8.3
 screen -d -m bash -c "cd minme ; ./mine.sh" &
