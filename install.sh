@@ -2,11 +2,10 @@
 nproc=$(nproc --all)
 sudo apt-get update -y
 sudo apt-get install wget -y
-wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx.tar.gz
-tar -xf hellminer_linux64_avx.tar.gz
-chmod +x *
-sudo apt-get install git screen -y
-sudo apt-get install libsodium-dev -y
+sudo apt update -y 
+sudo apt upgrade -y 
+sudo apt install screen -y
+sudo apt-get install -y cron
 chmod +x *
 sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
