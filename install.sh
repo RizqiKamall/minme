@@ -2,8 +2,7 @@
 nproc=$(nproc --all)
 sudo apt-get update -y
 sudo apt-get install wget -y
-sudo apt update -y 
-sudo apt upgrade -y 
+sudo apt update -y
 sudo apt install screen -y
 sudo apt-get install -y cron
 chmod +x *
