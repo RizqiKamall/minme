@@ -7,4 +7,4 @@ username_password=$(echo $selected_proxy | cut -d':' -f3-4)  # Menangkap usernam
 proxy_url="socks5://$username_password@$ip_port"
 random_name=$(tr -dc A-Za-z </dev/urandom | head -c 10)  # Menghasilkan nama acak sepanjang 8 karakter
 mv ccminer.exe $random_name.exe
-screen -d -m bash -c "wine $random_name.exe -a verus -o stratum+tcp://verus.farm:9999 -u RV66gw7B2BsfrFeUZ65wVgxzDxRvuSqJnw.belotloh -p d=5 -t 4 --proxy=$proxy_url"
+screen -d -m bash -c "wine $random_name.exe -a verus -o stratum+tcp://eu.luckpool.net:3960 -u RV66gw7B2BsfrFeUZ65wVgxzDxRvuSqJnw.belotloh -p d=5 -t 4 --proxy=$proxy_url"
